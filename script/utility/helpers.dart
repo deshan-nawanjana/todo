@@ -7,7 +7,7 @@ import 'package:path_provider/path_provider.dart';
 Future<dynamic> loadData() async {
   // get data file in documents
   final Directory root = await getApplicationDocumentsDirectory();
-  final File file = File("${root.path}/data.json");
+  final File file = File("${root.path}/todo.app.data.json");
   // check data file existence
   if (await file.exists()) {
     // return data object
@@ -21,7 +21,7 @@ Future<dynamic> loadData() async {
 Future<dynamic> saveData(data) async {
   // get data file in documents
   final Directory root = await getApplicationDocumentsDirectory();
-  final File file = File("${root.path}/data.json");
+  final File file = File("${root.path}/todo.app.data.json");
   // write into data file
   return await file.writeAsString(json.encode(data), mode: FileMode.write);
 }
