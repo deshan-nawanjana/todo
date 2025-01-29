@@ -1,0 +1,17 @@
+{
+  "files.exclude": {
+    ".dart_tool/": true,
+    ".idea/": true,
+    ".vscode": true,
+    "android/": true,
+    "build/": true,
+    "linux/": true,
+    "windows/": true,
+    ".flutter-plugins": true,
+    ".flutter-plugins-dependencies": true,
+    ".metadata": true,
+    "analysis_options.yaml": true,
+    "pubspec.lock": true,
+    "todo.iml": true,
+  }
+}
